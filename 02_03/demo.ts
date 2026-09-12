@@ -1,7 +1,7 @@
 const name = "Superbattery";
 let power = 99;
 
-// Hallo
+// Hallo Typescript
 export default {
   name,
   currentPower: power,
