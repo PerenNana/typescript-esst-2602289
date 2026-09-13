@@ -1,6 +1,6 @@
 type Restaurant = {
   name: string;
-  location: string;
+  location?: string;
   priceRange: "low" | "normal" | "high";
   comment?: string;
 };
@@ -8,12 +8,11 @@ type Restaurant = {
 export function Demo() {
   const thaiRestaurant: Restaurant = {
     name: "Thai Mo",
-    location: "Pluto",
     priceRange: "normal",
     comment: "Lecker!",
   };
 
-  const germanRestaurant: Partial<Restaurant> = {
-    comment: "hallo!",
+  const GermanRestaurant: Partial<Restaurant> = {
+    
   };
 }

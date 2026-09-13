@@ -1,21 +1,21 @@
 export function Demo() {
-  type AuthorObject = {
-    author: string;
+  type AuthorObject = { 
+    author: string; 
     address: {
       city: string;
       streetNumber: number;
-    };
-    hobbies: string[];
+    }
+    hobbys: string;
   };
 
   let person: AuthorObject[] = [
-    {
-      author: "David Lorenz",
+    { 
+      author: "David Lorenz", 
       address: {
-        city: "Wondercity",
+        city: 'Wondercity',
         streetNumber: 700,
-      },
-      hobbies: ["Tennis"],
-    },
+      }, 
+      hobbys:"tennis" 
+    }
   ];
 }

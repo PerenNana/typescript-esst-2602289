@@ -6,11 +6,15 @@ export function Demo() {
     console.log("myFunction called!");
   };
 
-  const myFunction2: NumberFunction = () => {
-    console.log("myFunction called!");
-    return 123;
-  };
+  const myNumberFunction: NumberFunction = () => {
+    return 6 + 5;
+  }
 
-  myFunction2(10, "test");
+  const otherFunc = (zahl: number): string => {
+    return 'string';
+  }
+
   myFunction();
+  myNumberFunction(45, "test");
+  otherFunc(45);
 }

@@ -8,6 +8,6 @@ export function Demo() {
   // myUndefined = true;
   // myUndefined = 2;
 
-  let myNull: boolean = null;
-  myNull = false;
+  let myNull: boolean = false;
+  // myNull = false;
 }

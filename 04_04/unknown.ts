@@ -4,8 +4,5 @@ export function Demo() {
 
   let myString: string;
   myString = foobar;
-  myString = foobar_unknown; // funktioniert nicht
-
-  // unknown = keine schnittmenge mit typen
-  // any = schnittmenge mit allen typen (chamäleon)
+  myString = foobar_unknown;
 }

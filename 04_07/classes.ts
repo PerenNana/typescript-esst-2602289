@@ -1,7 +1,12 @@
 class Person {
   static field = "Hey!";
 
-  constructor(public name: string) {}
+  // public steht hier für die Sichtbarkeit dieser Variable
+  // public name: string;
+
+  constructor(public name: string) {
+    this.name = name;
+  }
 }
 
 export function Demo() {
