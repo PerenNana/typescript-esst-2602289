@@ -10,17 +10,10 @@ const getSomeValue: SomeValueFunc = () => {
 export function Demo() {
   let value = getSomeValue();
 
-  if (
-    typeof value !== "number" &&
-    typeof value !== "string"
-  ) {
+  // Type-guarding
+  if (typeof value !== 'number' && typeof value !== 'string') {
     console.log(value.name);
   }
-
-  if (value instanceof Object) {
-    console.log(value.name);
-  }
-
   const myObject: { foobar?: { foo: boolean } } = {};
 
   if (myObject.foobar) {
