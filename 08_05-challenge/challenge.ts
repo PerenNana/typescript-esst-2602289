@@ -1,4 +1,6 @@
-const myFunction = (objectWithName: any) => {
+// type MyGenericFunc<T> = (param: T) => T;
+
+const myFunction = <InputParam extends { name: string }>(objectWithName: InputParam): InputParam => {
   return {
     ...objectWithName,
   };

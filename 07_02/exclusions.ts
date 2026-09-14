@@ -7,15 +7,7 @@ type ServerResponse = {
   html: string;
   errorCode: Exclude<ERROR_CODES, "ERROR_5">;
 };
-type SuccessResponse = Omit<ServerResponse, "errorCode">; // 'errorCode' | 'html'
-type FailureResponse = Omit<ServerResponse, "html">;
+type SuccessResponse = Omit<ServerResponse, "errorCode">
 
 export function Demo() {
-  const success: SuccessResponse = {
-    html: "<p>Hallo</p>",
-  };
-
-  const failure: FailureResponse = {
-    errorCode: "ERROR_2",
-  };
 }

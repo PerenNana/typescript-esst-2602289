@@ -9,8 +9,8 @@ export function Demo() {
 
   const getPersonOrAnimal: () => Person | Animal = () => {
     return {
-      name: "Lagertha",
-      animal: "dog",
+      name: 'Lagertha',
+      animal: 'dog',
     };
   };
 

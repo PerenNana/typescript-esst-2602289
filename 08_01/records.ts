@@ -2,7 +2,7 @@ export function Demo() {
   type Product = {
     productName: string;
     price: number;
-    details: Record<string, string | number>
+    details: Record<string, string | number>;
   };
 
   const p: Product = {
@@ -10,7 +10,7 @@ export function Demo() {
     price: 200,
     details: {
       color: 'blue',
-      height: 100,
+      height : 100,
     }
   }
 }

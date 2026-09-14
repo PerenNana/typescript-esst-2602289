@@ -4,11 +4,13 @@ export function Demo() {
 
   type MyObjectType = typeof myObject;
 
-  const myString = "hello";
-  type MyStringType = typeof myString;
+  const myString = 'hello';
+  type MyStringType = typeof myString; 
+  // type of myString is 'hello' 
 
-  let myString2 = "hello";
-  type MyStringType2 = typeof myString2;
+  const myString2 = 'hello';
+  type MyStringType2 = typeof myString2
+  // type of myString2 is string
 
   console.log(typeOfTest);
 }
